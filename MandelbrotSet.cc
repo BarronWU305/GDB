@@ -10,6 +10,7 @@ using namespace std;
 #define MAXCOUNT 40
 #define MAXCHARS 10
 #define RESIZE_RATIO  (double)MAXCHARS/(double)MAXCOUNT
+#define FIELD_FLAG
 
 const char CHAR_LEVELS[MAXCHARS] = {' ', '.', '-',
                                     'o', '~', '*',
@@ -184,7 +185,7 @@ int main() {
   DrawWholeBoard(field, fieldWidth, fieldHeight);
 
   delete [] field;  // Deallocate field array
-  #define FIELD_FLAG NULL //deletes the field. 
+  FIELD_FLAG NULL //deletes the field. 
 
 
   // Wait for input
