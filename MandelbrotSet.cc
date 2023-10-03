@@ -185,7 +185,6 @@ int main() {
   DrawWholeBoard(field, fieldWidth, fieldHeight);
 
   delete [] field;  // Deallocate field array
-  FIELD_FLAG NULL //deletes the field. 
 
 
   // Wait for input
