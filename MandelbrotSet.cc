@@ -10,7 +10,7 @@ using namespace std;
 #define MAXCOUNT 40
 #define MAXCHARS 10
 #define RESIZE_RATIO  (double)MAXCHARS/(double)MAXCOUNT
-#define FIELD_FLAG
+#define FIELD_FLAG NULL
 
 const char CHAR_LEVELS[MAXCHARS] = {' ', '.', '-',
                                     'o', '~', '*',
@@ -187,7 +187,8 @@ int main() {
   delete [] field;  // Deallocate field array
 
 
-  field = FIELD_FLAG; // moved down to make null  
+  field = FIELD_FLAG; // moved down to make null 
+   
 
   // Wait for input
   getchar();
