@@ -89,7 +89,7 @@ void ComputeMandelbrotSet(double minReal, double maxReal,
                           double minImag, double maxImag,
                           int *field, int fieldWidth, int fieldHeight)
 {
-  int i, j;
+  
 
   // Get the height and width of the board we will visualize
   int maxX = fieldWidth;
@@ -188,7 +188,7 @@ int main() {
 
 
   field = FIELD_FLAG; // moved down to make null 
-   
+
 
   // Wait for input
   getchar();
