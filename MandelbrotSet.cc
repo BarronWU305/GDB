@@ -179,13 +179,15 @@ int main() {
   ComputeMandelbrotSet(minReal, maxReal, minImag, maxImag,
                        field, fieldWidth, fieldHeight);
 
-  field = FIELD_FLAG; 
+  
 
   // Draw that board to the screen
   DrawWholeBoard(field, fieldWidth, fieldHeight);
 
   delete [] field;  // Deallocate field array
 
+
+  field = FIELD_FLAG; // moved down to make null  
 
   // Wait for input
   getchar();
