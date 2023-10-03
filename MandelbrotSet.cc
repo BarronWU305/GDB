@@ -146,7 +146,6 @@ void ComputeMandelbrotSet(double minReal, double maxReal,
       }
 
       // Place the appropriate character on the board
-      escCount = (int)pow(escCount,0);
       int index = (y * fieldWidth) + x;
       field[index] = (escCount - 1) * RESIZE_RATIO;
     }
