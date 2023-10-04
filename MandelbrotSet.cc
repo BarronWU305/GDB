@@ -72,6 +72,9 @@ void DrawWholeBoard(int *field, int width, int height) {
 
   // Place a message at the bottom-right of the screen
   string message = "Press Any Key";
+
+  int size = message.length(); 
+
   for (int chidx=0; chidx<message.length(); chidx++) {
     int col = width - message.length() + chidx; // Calc position
     mvaddch(height-1, col, message[chidx]);     // ncurses:  draw character
