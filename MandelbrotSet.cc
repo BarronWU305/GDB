@@ -75,7 +75,7 @@ void DrawWholeBoard(int *field, int width, int height) {
 
   int size = message.length(); 
 
-  for (int chidx=0; chidx<message.length(); chidx++) {
+  for (int chidx=0; chidx<size; chidx++) {
     int col = width - message.length() + chidx; // Calc position
     mvaddch(height-1, col, message[chidx]);     // ncurses:  draw character
   }
